@@ -1,2 +1,2 @@
-# amit-weds-shivangi
-Mr &amp; Mrs Tiwari
+# VeereDiWwedding
+Amit Weds Shivangi 
