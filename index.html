@@ -416,7 +416,7 @@ button { letter-spacing:.025em; }
 <div class="opening-blessing" lang="hi">॥ श्री गणेशाय नमः ॥</div>
 <div aria-label="Open the wedding invitation" class="envelope-scene" id="envelopeOpenCard" role="button" tabindex="0">
 <div class="envelope-back"></div>
-<div class="envelope-letter"><div class="mini-om">॥ श्री गणेशाय नमः ॥</div><strong>Wedding Invitation</strong><span class="letter-couple">Amit <em>Weds</em> Shivangi</span><span class="letter-date">30 November–5 December 2026</span><span class="letter-open-hint">✦ Tap to open ✦</span></div>
+<div class="envelope-letter"><div class="mini-om">॥ श्री गणेशाय नमः ॥</div><strong>Wedding Invitation</strong><span class="letter-couple">Amit <em>Weds</em> Shivangi</span><span class="letter-date">1–5 December 2026</span><span class="letter-open-hint">✦ Tap to open ✦</span></div>
 <div class="envelope-front"></div><div class="envelope-flap"></div><div class="envelope-seal">❋</div>
 </div>
 <h1 class="opening-title">The Wedding</h1>
@@ -432,11 +432,15 @@ button { letter-spacing:.025em; }
 </a>
 <div class="navlinks"><a href="#our-moment">Our Moment</a><a href="#karyakram">Celebrations</a><a href="#parivar">The Couple</a><a href="#cards">Invitation Cards</a></div>
 <div class="navtools">
+<button aria-label="Play Ganesh mantra" aria-pressed="false" class="iconbtn" id="mantraToggle" onclick="toggleMantra()" title="Play Ganesh mantra" type="button">♫</button>
 <button aria-label="निमंत्रण Share" class="iconbtn" onclick="shareInvite()" title="Share" type="button"><svg fill="none" height="18" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="18"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="m8.7 10.7 6.6-4M8.7 13.3l6.6 4"></path></svg></button>
 <button aria-label="Print" class="iconbtn" onclick="window.print()" title="Print" type="button"><svg fill="none" height="18" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="18"><path d="M7 8V3h10v5M7 17H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-3"></path><path d="M7 14h10v7H7zM18 11h.01"></path></svg></button>
 </div>
 </div>
 </nav>
+<audio id="ganeshMantra" loop preload="none">
+<source src="Vakratunda Mahakaya वकरतड महकय  Ganesh Mantra %23god %23bhakti.mp3" type="audio/mpeg"/>
+</audio>
 <header class="hero poster-hero" id="home">
   <div class="poster-hero-glow" aria-hidden="true"></div>
   <div class="poster-hero-inner">
@@ -444,7 +448,7 @@ button { letter-spacing:.025em; }
     <div class="poster-hero-copy">
       <div class="poster-kicker">✦ A KEEPSAKE OF OUR LOVE ✦</div>
       <h1>Amit <em>Weds</em> Shivangi</h1>
-      <div class="poster-date"><span aria-hidden="true">✧</span> 30 NOVEMBER–5 DECEMBER 2026 <span aria-hidden="true">✧</span></div>
+      <div class="poster-date"><span aria-hidden="true">✧</span> 1–5 DECEMBER 2026 <span aria-hidden="true">✧</span></div>
     </div>
     <figure class="poster-hero-frame"><img src="AS.jpeg" alt="Amit Tiwari and Shivangi Tiwari wedding invitation and program details" fetchpriority="high"/></figure>
   </div>
@@ -463,14 +467,14 @@ button { letter-spacing:.025em; }
 </section>
 <section class="section events-section" id="karyakram">
 <div class="section-inner">
-<div class="section-heading reveal"><div class="overline">The celebrations</div><h2>The Wedding Celebrations</h2><p>Join us for the auspicious ceremonies and wedding celebrations from 30 November to 5 December 2026.</p></div>
-<div class="celebration-poster-wrap reveal"><img class="celebration-poster-art" src="f24f4852-8c38-4c51-983a-9f71c33fcf46.jpg" alt="Haldi Ceremony on 30 November, Wedding on 2 December, and Preetibhoj on 5 December 2026" loading="lazy"></div>
+<div class="section-heading reveal"><div class="overline">The celebrations</div><h2>The Wedding Celebrations</h2><p>Join us for the auspicious ceremonies and wedding celebrations from 1 to 5 December 2026.</p></div>
+<div class="celebration-poster-wrap reveal"><img class="celebration-poster-art" src="f24f4852-8c38-4c51-983a-9f71c33fcf46.jpg" alt="Matri Pujan and Janeu Sanskar on 1 December, Wedding on 2 December, Baraat Wapsi on 3 December, Akhand Ramayan on 4 December, and Preetibhoj with Vadhu Aagman on 5 December 2026" loading="lazy"></div>
 <div class="event-grid">
-<article class="event reveal"><div class="event-top"><span class="event-number">1</span><span class="event-day">Monday</span></div><h3>Haldi Ceremony</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>30 November 2026</div><p>Haradra Lepan, the auspicious haldi ceremony.</p></article>
-<article class="event reveal"><div class="event-top"><span class="event-number">2</span><span class="event-day">Wednesday</span></div><h3>Wedding &amp; Baraat Departure</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>2 December 2026</div><p>The baraat will depart from the groom's residence in Village Nokhepur, Post Basupur.</p></article>
-<article class="event reveal"><div class="event-top"><span class="event-number">3</span><span class="event-day">Thursday</span></div><h3>Vadhu Aagman / Return of Baraat</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>3 December 2026</div><p>Welcome the bride and the returning wedding party.</p></article>
-<article class="event reveal"><div class="event-top"><span class="event-number">4</span><span class="event-day">Friday</span></div><h3>Shri Ramcharitmanas Path</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>4 December 2026</div><p>At the groom's residence, Village Nokhepur.</p></article>
-<article class="event reveal"><div class="event-top"><span class="event-number">5</span><span class="event-day">Saturday</span></div><h3>Preetibhoj / Wedding Feast</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>5 December 2026</div><p>Join us for the wedding feast at the groom's residence, Village Nokhepur.</p></article>
+<article class="event reveal"><div class="event-top"><span class="event-number">1</span><span class="event-day">Tuesday</span></div><h3>Matri Pujan &amp; Janeu Sanskar</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>1 December 2026</div><p>Matri Pujan and the Janeu Sanskar ceremony.</p></article>
+<article class="event reveal"><div class="event-top"><span class="event-number">2</span><span class="event-day">Wednesday</span></div><h3>Shubh Vivah / Wedding</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>2 December 2026</div><p>The baraat departs at 4:00 PM from the groom's residence in Village Nokhepur, Post Basupur.</p></article>
+<article class="event reveal"><div class="event-top"><span class="event-number">3</span><span class="event-day">Thursday</span></div><h3>Baraat Wapsi / Return</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>3 December 2026</div><p>Return of the wedding party.</p></article>
+<article class="event reveal"><div class="event-top"><span class="event-number">4</span><span class="event-day">Friday</span></div><h3>Akhand Ramayan</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>4 December 2026</div><p>At the groom's residence, Village Nokhepur.</p></article>
+<article class="event reveal"><div class="event-top"><span class="event-number">5</span><span class="event-day">Saturday</span></div><h3>Preetibhoj / Vadhu Aagman</h3><div class="event-date"><svg fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>5 December 2026</div><p>Join us for the wedding feast and the bride's arrival at 6:00 PM in Village Nokhepur.</p></article>
 </div>
 <div class="invite-note reveal">On this auspicious occasion, <strong>your gracious presence and blessings are warmly requested.</strong></div>
 </div>
@@ -481,12 +485,12 @@ button { letter-spacing:.025em; }
 <div class="section-heading reveal"><div class="overline">With blessings</div><h2>Meet the Couple</h2><p>With love and blessings from both families</p></div>
 <div class="family-card reveal">
 <div class="family-names">
-<div class="person person-vivek"><span class="person-role">THE GROOM</span><div class="person-emblem" aria-hidden="true">✦</div><h3>Amit Tiwari</h3><p>Son of Smt. Madhuri Devi and Shri Amarnath Tiwari<br/>Village: Nokhepur, Post: Basupur<br/>District: Sultanpur (U.P.)</p></div>
+<div class="person person-vivek"><span class="person-role">THE GROOM</span><div class="person-emblem" aria-hidden="true">✦</div><h3>Amit Tiwari</h3><p>Son of Smt. Madhuri Tiwari and Shri Amarnath Tiwari<br/>Grandson of Late Smt. Saraswati Devi and Late Shri Ram Ajor Tiwari<br/>Village: Nokhepur, Post: Basupur<br/>District: Sultanpur (U.P.)</p></div>
 <div aria-hidden="true" class="ornament">❋</div>
-<div class="person person-prachi"><span class="person-role">THE BRIDE</span><div class="person-emblem" aria-hidden="true">❀</div><h3>Shivangi Tiwari</h3><p>Daughter of Smt. Kamlesh Tiwari and Shri Ashwani Tiwari<br/>Village: Mahmoodpur Jungle, Post: Paraspatti, Pandeybaba<br/>District: Sultanpur (U.P.)</p></div>
+<div class="person person-prachi"><span class="person-role">THE BRIDE</span><div class="person-emblem" aria-hidden="true">❀</div><h3>Shivangi Tiwari</h3><p>Daughter of Smt. Kamlesh Tiwari and Shri Ashwani Kumar Tiwari<br/>Granddaughter of Smt. Shobhavati Tiwari and Late Shri Ram Asare Tiwari<br/>Village: Mahmoodpur Jungle, Post: Paraspatti, Pandeybaba<br/>District: Sultanpur (U.P.)</p></div>
 </div>
 <div class="family-separator"></div>
-<p class="request-text">You are cordially invited to celebrate the wedding of Amit and Shivangi. Your presence and blessings will make the occasion joyful.<br/><br/><strong>With best compliments:</strong> Vindu Tiwari, Praveen Tiwari, Prateek Tiwari, Rishab Tiwari, and the entire Tiwari family.<br/><br/><strong>A little invitation from Shivansh and Akshat:</strong> “Please do come to our dear uncle's wedding!”<br/><br/><strong>Invited by:</strong> Smt. Madhuri Devi and Shri Amarnath Tiwari<br/><strong>Contact:</strong> <a href="tel:9450661095">9450661095</a> · <a href="tel:9454379145">9454379145</a></p>
+<p class="request-text">You are cordially invited to celebrate the wedding of Amit and Shivangi. Your presence and blessings will make the occasion joyful.<br/><br/><strong>Best wishes from:</strong> Shri Prashant Tiwari, Dr. Praveen Tiwari, Shri Prateek Tiwari, Rishabh, and Yug.<br/><strong>Welcome from:</strong> Shri Ram Prasad Tiwari and Shri Ram Sakal Tiwari.<br/><br/><strong>A little invitation from Aakankshi, Srishti, Akshat, and Shivansh:</strong> “Please do come to our dear uncle's wedding!”<br/><br/><strong>Invited by:</strong> Smt. Madhuri Tiwari and Shri Amarnath Tiwari<br/><strong>Contact:</strong> <a href="tel:9450661095">9450661095</a> · <a href="tel:9454379145">9454379145</a></p>
 </div>
 </div>
 </section>
@@ -494,8 +498,8 @@ button { letter-spacing:.025em; }
 <div class="section-inner">
 <div class="section-heading reveal"><div class="overline">The invitation suite</div><h2>Your Invitation Cards</h2><p>Tap a card to view it in detail, or download it to keep as a keepsake.</p></div>
 <div class="card-gallery">
-<article class="card-tile reveal"><div class="card-tile-head"><h3>Wedding Invitation</h3><span class="small-label">Amit &amp; Shivangi</span></div><button aria-label="Family and invitation details card" class="card-image-button" onclick="openCard('gold')" type="button"><img alt="Wedding invitation family and contact details" id="goldCard" loading="lazy" src="WhatsAppImage.jpeg"/></button><div class="tile-actions"><button class="btn btn-outline" onclick="downloadCard('gold')" type="button">Download Card ↓</button><button class="btn btn-outline" onclick="openCard('gold')" type="button">View Larger ↗</button></div></article>
-<article class="card-tile reveal"><div class="card-tile-head"><h3>Wedding Celebration Highlights</h3><span class="small-label">Haldi · Wedding · Preetibhoj</span></div><button aria-label="Wedding celebration highlights card" class="card-image-button" onclick="openCard('celebrations')" type="button"><img alt="Haldi Ceremony, Wedding, and Preetibhoj celebration illustrations" id="celebrationCard" loading="lazy" src="WhatsAppImage1.jpeg"/></button><div class="tile-actions"><button class="btn btn-outline" onclick="downloadCard('celebrations')" type="button">Download Card ↓</button><button class="btn btn-outline" onclick="openCard('celebrations')" type="button">View Larger ↗</button></div></article>
+<article class="card-tile reveal"><div class="card-tile-head"><h3>Wedding Invitation</h3><span class="small-label">Amit &amp; Shivangi</span></div><button aria-label="Family and invitation details card" class="card-image-button" onclick="openCard('gold')" type="button"><img alt="Wedding invitation family and contact details" id="goldCard" loading="lazy" src="WhatsAppImage.png"/></button><div class="tile-actions"><button class="btn btn-outline" onclick="downloadCard('gold')" type="button">Download Card ↓</button><button class="btn btn-outline" onclick="openCard('gold')" type="button">View Larger ↗</button></div></article>
+<article class="card-tile reveal"><div class="card-tile-head"><h3>Celebration Highlights</h3><span class="small-label">Preetibhoj</span></div><button aria-label="Wedding celebration highlights card" class="card-image-button" onclick="openCard('celebrations')" type="button"><img alt="Matri Pujan, wedding, and Preetibhoj celebration illustrations" id="celebrationCard" loading="lazy" src="WhatsAppImage1.png"/></button><div class="tile-actions"><button class="btn btn-outline" onclick="downloadCard('celebrations')" type="button">Download Card ↓</button><button class="btn btn-outline" onclick="openCard('celebrations')" type="button">View Larger ↗</button></div></article>
 </div>
 </div>
 </section>
@@ -514,6 +518,7 @@ const heroCardImage=document.querySelector('.poster-hero-frame img');
 if(heroCardImage && document.getElementById('pinkCard')) heroCardImage.src=document.getElementById('pinkCard').src;
 function openInvitationExperience(){
  if(openingScreen.classList.contains('opening') || openingScreen.classList.contains('is-open')) return;
+ toggleMantra();
  openingScreen.classList.add('opening');
  openInviteButton.disabled=true;
  openInviteButton.textContent='निमंत्रण खुल रहा है…';
@@ -529,11 +534,27 @@ const envelopeOpenCard=document.getElementById('envelopeOpenCard');
 envelopeOpenCard.addEventListener('click',openInvitationExperience);
 envelopeOpenCard.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openInvitationExperience();}});
 
-const cards={gold:{src:document.getElementById('goldCard').src,name:'Family-and-Invitation-Details.jpg',caption:'Family and invitation details for Amit Tiwari and Shivangi Tiwari'},celebrations:{src:document.getElementById('celebrationCard').src,name:'Wedding-Celebration-Highlights.jpg',caption:'Haldi, Wedding, and Preetibhoj celebration highlights'}};
+const mantraAudio=document.getElementById('ganeshMantra');
+const mantraToggle=document.getElementById('mantraToggle');
+function updateMantraToggle(isPlaying){
+ const label=isPlaying?'Pause Ganesh mantra':'Play Ganesh mantra';
+ mantraToggle.setAttribute('aria-pressed',String(isPlaying));
+ mantraToggle.setAttribute('aria-label',label);
+ mantraToggle.title=label;
+}
+mantraAudio.addEventListener('play',()=>updateMantraToggle(true));
+mantraAudio.addEventListener('pause',()=>updateMantraToggle(false));
+async function toggleMantra(){
+ if(!mantraAudio.paused){mantraAudio.pause();return}
+ try{await mantraAudio.play()}
+ catch(error){updateMantraToggle(false);showToast('Unable to play the Ganesh mantra. Check that the audio file is available and try again.')}
+}
+
+const cards={gold:{src:document.getElementById('goldCard').src,name:'Family-and-Invitation-Details.jpg',caption:'Family and invitation details for Amit Tiwari and Shivangi Tiwari'},celebrations:{src:document.getElementById('celebrationCard').src,name:'Wedding-Celebration-Highlights.jpg',caption:'Matri Pujan, Wedding, and Preetibhoj celebration highlights'}};
 let toastTimer;
 function showToast(message){const el=document.getElementById('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3000)}
 async function shareInvite(){
-  const text='Shree Ganeshaya Namah\nYou are cordially invited to the wedding of Amit Tiwari and Shivangi Tiwari.\n\nHaldi Ceremony ? Monday, 30 November 2026\nWedding and Baraat Departure ? Wednesday, 2 December 2026 (from Village Nokhepur, Post Basupur)\nVadhu Aagman / Return of Baraat ? Thursday, 3 December 2026\nShri Ramcharitmanas Path ? Friday, 4 December 2026 (Residence, Village Nokhepur)\nPreetibhoj / Wedding Feast ? Saturday, 5 December 2026 (Residence, Village Nokhepur)\n\nWith best compliments from the Tiwari and Tiwari families.\nInvited by Smt. Madhuri Devi and Shri Amarnath Tiwari.\nContact: 9450661095, 9454379145\n\nYour gracious presence and blessings are warmly requested.';
+  const text='Shree Ganeshaya Namah\nYou are cordially invited to the wedding of Amit Tiwari and Shivangi Tiwari.\n\nMatri Pujan and Janeu Sanskar - Tuesday, 1 December 2026\nShubh Vivah / Wedding - Wednesday, 2 December 2026 (baraat departs at 4:00 PM from Village Nokhepur, Post Basupur)\nBaraat Wapsi / Return - Thursday, 3 December 2026\nAkhand Ramayan - Friday, 4 December 2026 (Residence, Village Nokhepur)\nPreetibhoj / Vadhu Aagman - Saturday, 5 December 2026 at 6:00 PM (Village Nokhepur)\n\nBest wishes from Shri Prashant Tiwari, Dr. Praveen Tiwari, Shri Prateek Tiwari, Rishabh, and Yug.\nWelcome from Shri Ram Prasad Tiwari and Shri Ram Sakal Tiwari.\nInvited by Smt. Madhuri Tiwari and Shri Amarnath Tiwari.\nContact: 9450661095, 9454379145\n\nYour gracious presence and blessings are warmly requested.';
  if(navigator.share){try{await navigator.share({title:'Amit Tiwari and Shivangi Tiwari - Wedding Invitation',text})}catch(e){if(e.name!=='AbortError')copyInvite(text)}}
  else copyInvite(text);
 }
